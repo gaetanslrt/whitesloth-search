@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteSloth Search - The lazy search engine</title>
+    <link href="/assets/styles/home-style.css" rel="stylesheet"/>
+</head>
+<body>
+
+    
+    
+    <div class="title-div">
+        <img src="assets/images/title.png" width="100%">
+        <img id="sloth" src="assets/images/logo.png">
+    </div>
+
+    <img class="mosquito" src="assets/images/mosquito.gif">
+    <div id="conversationList"></div>
+
+    <div class="search-bar">
+        <form id="questionForm" autocomplete="off">
+            <input type="text" id="userInput" name="userInput" placeholder="Ask the sloth something..." required>
+            <button type="submit">🔎</button>
+        </form>
+    </div>
+
+    <i id="linkedin-link" class="fa fa-linkedin-square"></i>
+    
+    <script src="assets/scripts/search.js"></script>
+    <script>
+        function scrollToBottom() {
+            const conversationList = document.getElementById('conversationList');
+            conversationList.scrollTop = conversationList.scrollHeight;
+        }
+
+        function afficherReponseAvecDelai(userInput, answer, delayMs) {
+            const conversationList = document.getElementById('conversationList');
+            const conversationItem = document.createElement('div');
+            conversationItem.className = 'conversation-item';
+
+            // Afficher immédiatement la question de l'utilisateur
+            conversationItem.innerHTML = `<div class="user-query">${userInput}</div>`;
+            conversationList.appendChild(conversationItem);
+
+            // Afficher la réponse après le délai
+            setTimeout(() => {
+                conversationItem.innerHTML += `<div class="ai-response">${answer}</div>`;
+                scrollToBottom();
+            }, delayMs);
+        }
+
+        async function handleSubmit(e) {
+            e.preventDefault();
+            const userInput = document.getElementById('userInput').value;
+            
+            // Show a loading message
+            afficherReponseAvecDelai(userInput, "Searching...", 0);
+
+            // Get the search results
+            const answer = await getDuckDuckGoResults(userInput);
+            
+            // Update the response with the search results
+            const conversationList = document.getElementById('conversationList');
+            const lastItem = conversationList.lastElementChild;
+            lastItem.querySelector('.ai-response').textContent = answer;
+
+            // Scroll to bottom and reset input
+            scrollToBottom();
+            document.getElementById('userInput').value = '';
+        }
+
+        document.getElementById('questionForm').addEventListener('submit', handleSubmit);
+    </script>
+</body>
+</html>
