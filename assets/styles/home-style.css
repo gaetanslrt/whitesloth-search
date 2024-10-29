@@ -6,9 +6,10 @@ html {
 }
 
 body {
+    display: grid;
     color: rgb(18, 17, 17);
     background-image: url("/assets/images/jungle-background.png");
-    background-attachment: fixed; /* This ensures the background doesn't scroll */
+    /*background-attachment: fixed; /* This ensures the background doesn't scroll */
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -48,6 +49,7 @@ body {
 .conversation-item {
     padding: 10px;
 }
+
 .user-query {
     font-weight: bold;
     font-size: 50px;
@@ -66,7 +68,7 @@ body {
     margin-top: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255, 0.55);
-    border: solid black;
+    border: solid 1px black;
     border-radius: 15px;
     line-height: 1.5;
     padding: 10px 10px 10px 10px;
@@ -78,14 +80,14 @@ body {
 }
 
 #questionForm {
-    border-style: solid;
+    border: none;
     border-radius: 100px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 3vh;
+    position: fixed;
+    bottom: 20px;
     height: 50px;
     width: 50%;
 }
