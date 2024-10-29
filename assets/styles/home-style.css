@@ -9,7 +9,7 @@ body {
     display: grid;
     color: rgb(18, 17, 17);
     background-image: url("/assets/images/jungle-background.png");
-    /*background-attachment: fixed; /* This ensures the background doesn't scroll */
+    background-attachment: fixed; /* This ensures the background doesn't scroll */
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
