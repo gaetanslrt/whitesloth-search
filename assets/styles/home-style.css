@@ -106,7 +106,7 @@ button {
     margin-left: 3vh;
     border: none;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     padding: 0 10px 0 10px;
 }
 
@@ -123,7 +123,20 @@ button {
     opacity: 1;
 }
 
-@media (max-width: 601px) {
+.link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
     .title-div {
         width: 85% !important;
         height: auto;
@@ -142,6 +155,12 @@ button {
     }
 
     #linkedin-link {
+        top: 10px;
+        color: white !important;
+        opacity: 1 !important;
+    }
+
+    .link {
         top: 10px;
         color: white !important;
         opacity: 1 !important;
