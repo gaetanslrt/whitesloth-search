@@ -156,12 +156,14 @@ button {
 
     #linkedin-link {
         top: 10px;
+        bottom: auto;
         color: white !important;
         opacity: 1 !important;
     }
 
     .link {
         top: 10px;
+        bottom: auto;
         color: white !important;
         opacity: 1 !important;
     }
