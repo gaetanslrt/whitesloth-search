@@ -39,6 +39,10 @@ body {
     width: 6.5%;
 }
 
+.mosquito:hover {
+    filter: brightness(1.35);
+}
+
 #conversationList {
     margin-top: 20px;
     max-height: 55vh;
@@ -166,6 +170,7 @@ button {
         bottom: auto;
         color: white !important;
         opacity: 1 !important;
+        font-size: x-small;
     }
 }
 
