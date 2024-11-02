@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moo+Lah+Lah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Hanalei&family=Kirang+Haerang&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moo+Lah+Lah&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    color: rgb(18, 17, 17);
+    background-image: url("/assets/images/jungle-background.png");
+    background-attachment: fixed; /* This ensures the background doesn't scroll */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#back-arrow {
+    color: #b07a58;
+    -webkit-text-stroke: 1px rgb(61, 33, 10);
+    text-decoration: none;
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.about-title {
+    color: #b07a58;
+    -webkit-text-stroke: 1px rgb(61, 33, 10);
+    font-family: "Kirang Haerang", system-ui;
+    font-size: 35px;
+    place-self: center;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.description-title {
+    color: #b07a58;
+    -webkit-text-stroke: 1px rgb(61, 33, 10);
+    font-family: "Kirang Haerang", system-ui;
+    font-size: 45px;
+}
+
+.description-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255, 0.55);
+    border: solid 1px black;
+    border-radius: 15px;
+    line-height: 1.5;
+    padding: 10px 10px 10px 10px;
+}
+
+.author {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pp {
+    border: solid 2.5px white;
+    border-radius: 1000px;
+    width: 15%;
+}
+
+#author-name {
+    color: #b07a58;
+    -webkit-text-stroke: 1px rgb(61, 33, 10);
+    font-family: "Kirang Haerang", system-ui;
+    font-size: 45px;
+}
+
+#link {
+    text-decoration: underline;
+    color: #b07a58;
+}
+
+@media (max-width: 700px) {
+    #pp {
+        width: 50%;
+    }
+}
+

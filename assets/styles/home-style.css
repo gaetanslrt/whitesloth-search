@@ -17,6 +17,15 @@ body {
 
 }
 
+#soundToggle {
+    position: fixed;
+    width: 5%;
+    bottom: 10px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
 .title-div {
     place-self: center;
     width: 50%;
@@ -171,6 +180,12 @@ button {
         color: white !important;
         opacity: 1 !important;
         font-size: x-small;
+    }
+
+    #soundToggle {
+        top: 2px !important;
+        width: 12% !important;
+        z-index: 1000;
     }
 }
 

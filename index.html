@@ -5,15 +5,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhiteSloth Search - The lazy search engine</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicons/official-logo.ico">
     <link href="/assets/styles/home-style.css" rel="stylesheet"/>
 </head>
 <body>
+    <audio id="jungleSound" loop autoplay>
+        <source src="/assets/sounds/jungle-sounds.mp3" type="audio/mpeg">
+    </audio>
+    <img id="soundToggle" src="/assets/images/sound-on.png">
     <div class="title-div">
         <img src="assets/images/title.png" width="100%">
         <img id="sloth" src="assets/images/logo.png">
     </div>
 
-    <a href="https://www.scribocracy.com/"><img class="mosquito" src="assets/images/mosquito.gif"></a>
+    <a href="pages/about.html"><img class="mosquito" src="assets/images/mosquito.gif"></a>
     <div id="conversationList"></div>
 
     <div class="search-bar">
@@ -71,6 +76,28 @@
         }
 
         document.getElementById('questionForm').addEventListener('submit', handleSubmit);
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const audio = document.getElementById('jungleSound');
+        const soundToggle = document.getElementById('soundToggle');
+        let isMuted = false; // Changé à false pour commencer avec le son activé
+
+        audio.volume = 1; // Commence avec le son activé
+
+        soundToggle.src = "/assets/images/sound-on.png"; // Icône initiale pour le son activé
+
+        soundToggle.addEventListener('click', function() {
+            if (isMuted) {
+                audio.volume = 1;
+                audio.play();
+                soundToggle.src = "/assets/images/sound-on.png";
+            } else {
+                audio.volume = 0;
+                soundToggle.src = "/assets/images/sound-off.png";
+            }
+            isMuted = !isMuted;
+        });
+    });
     </script>
 </body>
 </html>
