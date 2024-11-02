@@ -9,7 +9,7 @@
     <link href="/assets/styles/home-style.css" rel="stylesheet"/>
 </head>
 <body>
-    <audio id="jungleSound" loop="true" autoplay="true">
+    <audio id="jungleSound" loop autoplay>
         <source src="/assets/sounds/jungle-sounds.mp3" type="audio/mpeg">
     </audio>
     <img id="soundToggle" src="/assets/images/sound-on.png">
@@ -80,11 +80,11 @@
         document.addEventListener('DOMContentLoaded', function() {
         const audio = document.getElementById('jungleSound');
         const soundToggle = document.getElementById('soundToggle');
-        let isMuted = false; // Changé à false pour commencer avec le son activé
+        let isMuted = true; // Changé à false pour commencer avec le son désactivé
 
-        audio.volume = 1; // Commence avec le son activé
+        audio.volume = 0; // Commence avec le son désactivé
 
-        soundToggle.src = "/assets/images/sound-on.png"; // Icône initiale pour le son activé
+        soundToggle.src = "/assets/images/sound-off.png"; // Icône initiale pour le son inactif
 
         soundToggle.addEventListener('click', function() {
             if (isMuted) {
