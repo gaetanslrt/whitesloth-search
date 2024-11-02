@@ -99,8 +99,16 @@ body {
         width: 15% !important;
     }
 
-    #author-name .about-title .description-title {
-        -webkit-text-stroke: 2px rgb(61, 33, 10) !important;
+    #author-name {
+        -webkit-text-stroke: 3px rgb(61, 33, 10) !important;
+    }
+
+    .about-title {
+        -webkit-text-stroke: 3px rgb(61, 33, 10) !important;
+    }
+
+    .description-title {
+        -webkit-text-stroke: 3px rgb(61, 33, 10) !important;
     }
     
 }
