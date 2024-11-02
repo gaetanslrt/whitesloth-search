@@ -76,6 +76,7 @@ body {
 }
 
 #author-name {
+    text-align: center;
     color: #b07a58;
     -webkit-text-stroke: 1px rgb(61, 33, 10);
     font-family: "Kirang Haerang", system-ui;
@@ -97,5 +98,10 @@ body {
         left: 20px;
         width: 15% !important;
     }
+
+    #author-name {
+        -webkit-text-stroke: 3px rgb(61, 33, 10) !important;
+    }
+    
 }
 
