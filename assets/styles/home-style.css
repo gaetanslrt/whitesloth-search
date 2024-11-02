@@ -151,10 +151,6 @@ button {
 
 @media (max-width: 700px) {
 
-    body {
-        background-size: auto !important;
-    }
-
     .title-div {
         width: 85% !important;
         height: auto;
