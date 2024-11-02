@@ -8,8 +8,8 @@ html {
 body {
     display: grid;
     color: rgb(18, 17, 17);
+    background-attachment: fixed;
     background-image: url("/assets/images/jungle-background.png");
-    background-attachment: fixed; /* This ensures the background doesn't scroll */
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,13 +17,13 @@ body {
 }
 
 #back-arrow {
+    width: 5%;
     color: #b07a58;
     -webkit-text-stroke: 1px rgb(61, 33, 10);
     text-decoration: none;
-    font-size: 35px;
     position: absolute;
-    top: 20px;
-    left: 30px;
+    top: 40px;
+    left: 40px;
     cursor: pointer;
 }
 
@@ -90,6 +90,12 @@ body {
 @media (max-width: 700px) {
     #pp {
         width: 50%;
+    }
+
+    #back-arrow {
+        top: 30px;
+        left: 20px;
+        width: 15% !important;
     }
 }
 
