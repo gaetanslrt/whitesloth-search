@@ -12,4 +12,4 @@ https://whitesloth-search.pages.dev/
 
 # Author
 developed by @gaetanslrt
-My Twitter/X : https://x.com/GaetanSlrt
+Twitter/X : https://x.com/GaetanSlrt
