@@ -44,11 +44,9 @@
             const conversationItem = document.createElement('div');
             conversationItem.className = 'conversation-item';
 
-            // Afficher immédiatement la question de l'utilisateur
             conversationItem.innerHTML = `<div class="user-query">${userInput}</div>`;
             conversationList.appendChild(conversationItem);
 
-            // Afficher la réponse après le délai
             setTimeout(() => {
                 conversationItem.innerHTML += `<div class="ai-response">${answer}</div>`;
                 scrollToBottom();
@@ -59,18 +57,14 @@
             e.preventDefault();
             const userInput = document.getElementById('userInput').value;
             
-            // Show a loading message
             afficherReponseAvecDelai(userInput, "Searching...", 0);
 
-            // Get the search results
             const answer = await getDuckDuckGoResults(userInput);
             
-            // Update the response with the search results
             const conversationList = document.getElementById('conversationList');
             const lastItem = conversationList.lastElementChild;
             lastItem.querySelector('.ai-response').textContent = answer;
 
-            // Scroll to bottom and reset input
             scrollToBottom();
             document.getElementById('userInput').value = '';
         }
@@ -80,11 +74,11 @@
         document.addEventListener('DOMContentLoaded', function() {
         const audio = document.getElementById('jungleSound');
         const soundToggle = document.getElementById('soundToggle');
-        let isMuted = true; // Changé à false pour commencer avec le son désactivé
+        let isMuted = true;
 
-        audio.volume = 0; // Commence avec le son désactivé
+        audio.volume = 0;
 
-        soundToggle.src = "/assets/images/sound-off.png"; // Icône initiale pour le son inactif
+        soundToggle.src = "/assets/images/sound-off.png";
 
         soundToggle.addEventListener('click', function() {
             if (isMuted) {
