@@ -123,19 +123,6 @@ button {
     padding: 0 10px 0 10px;
 }
 
-#linkedin-link {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: white;
-    opacity: 0.8;
-    font-size: xx-large;
-}
-
-#linkedin-link:hover {
-    opacity: 1;
-}
-
 .link {
     position: absolute;
     bottom: 10px;
