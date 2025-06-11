@@ -4,7 +4,7 @@ https://whitesloth-search.pages.dev/
 
 🦟 Click on the mosquito !
 
-# About
+## About
 🔎 Based on the DuckDuckGo API, WhiteSloth Search is a simple search interface accessible to all, providing results in just a few sentences, while respecting your privacy and confidentiality. The results are in text-only format to avoid masses of information that can be seen on big search engine like Google.
 
 🌴 The cool jungle theme adds a relaxing atmosphere while you search. Please contact me if you have any idea or tips to add details to make the scene more enjoyable !
