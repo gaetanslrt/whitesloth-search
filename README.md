@@ -10,6 +10,5 @@ https://whitesloth-search.pages.dev/
 
 🦥 The white sloth is very lazy, so to have any chance of getting results, search for simple keywords only such as "Sloth" or "Jungle". It provides only short definitions or description of objects, places or personnalities. So while searching, try to imagine typing in an online encyclopedia search bar like Wikipedia.
 
-# Author
-developed by @gaetanslrt
-Twitter/X : https://x.com/GaetanSlrt
+# LINKS
+Twitter/X : https://x.com/gaetanslrt
