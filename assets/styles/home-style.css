@@ -53,10 +53,8 @@ body {
 }
 
 #conversationList {
-    margin-top: 20px;
-    max-height: 55vh;
+    max-height: 60vh;
     overflow-y: auto;
-    padding-bottom: 20px;
 }
 
 .conversation-item {
